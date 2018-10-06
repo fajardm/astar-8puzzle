@@ -1,4 +1,4 @@
-from puzzle import Puzzle, generate, get_none_index, neighbors, get_best_fvalue, is_goal
+from puzzle import Puzzle, get_none_index, neighbors, get_best_fvalue, is_goal
 import unittest
 
 
@@ -12,11 +12,6 @@ class TestPuzzleClass(unittest.TestCase):
         self.assertEqual(0, p.f)
         self.assertEqual(0, p.h)
         self.assertEqual(0, p.g)
-
-    def test_generate(self):
-        b = [[2, 4, 8], [5, None, 6], [7, 1, 2]]
-        p = generate()
-        self.assertEqual(b, p)
 
     def test_get_none_index(self):
         b = [[2, 4, 8], [5, None, 6], [7, 1, 2]]

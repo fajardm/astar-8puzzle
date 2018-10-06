@@ -11,11 +11,6 @@ class Puzzle:
         self.h = 0  # manhattan distance
 
 
-def generate():
-    board = [[3, 4, 8], [5, None, 6], [7, 1, 2]]
-    return board
-
-
 def get_none_index(board):
     for i in range(3):
         for j in range(3):
